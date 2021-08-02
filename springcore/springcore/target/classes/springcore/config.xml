@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context=" http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ 
+  <bean class="springcore.Address" name="address1">
+  <property name="street" >
+  <value>TempStreet</value>
+  </property>
+  
+  <property name="city">
+  <value>Kolhapur</value>
+  </property>
+  
+   <property name="zip">
+  <value>416115</value>
+  </property>
+  
+   <property name="state">
+  <value>Maharashtra</value>
+  </property>
+  
+   <property name="country">
+  <value>India</value>
+  </property>
+ 
+ </bean>
+ 
+ 
+ <bean class="springcore.Customer" name="customer1">
+<property name="customerId">
+  <value>1000</value>
+  </property>
+  
+  <property name="customerName">
+  <value>Dinesh</value>
+  </property>
+  
+  <property name="customerContact">
+  <value>8459723913</value>
+  </property>
+ 
+
+ 
+ <property name="customerAddress">
+  <ref bean="address1"/>
+
+  </property>
+ </bean>
+ </beans>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context=" http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ 
+  <bean class="com.springcore.collections.QuestionList" name="q1">
+  
+   <property name="questionId" >
+  <value>1000</value>
+  </property>
+  
+  <property name="question">
+  <value>Whats your name?</value>
+  </property>
+  
+  <property name="answers">
+  <list>
+  <value>Dinesh</value>
+  <value>Kisangopal</value>
+  <value>Sharma</value>
+  </list>
+  </property>
+ 
+ </bean>
+ 
+ 
+ <bean class="com.springcore.collections.QuestionSet" name="qset">
+  
+   <property name="questionId" >
+  <value>2000</value>
+  </property>
+  
+  <property name="question">
+  <value>What are your hobbies?</value>
+  </property>
+  
+  <property name="answers">
+  <set>
+  <value>Playing Games</value>
+  <value>Singing</value>
+  <value>Reading</value>
+  </set>
+  </property>
+ 
+ </bean>
+ 
+ 
+ <bean class="com.springcore.collections.QuestionMap" name="qmap">
+  
+   <property name="questionId" >
+  <value>3000</value>
+  </property>
+  
+  <property name="question">
+  <value>Your Friends</value>
+  </property>
+  
+  <property name="answers">
+  <map>
+  <entry key="1" value="Pratham"/>
+  <entry key="2" value="Swapnil"/>
+  <entry key="3" value="Shubham"/>
+  
+  </map>
+  </property>
+ 
+ </bean>
+ </beans>
