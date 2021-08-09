@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+var a = [5,10,15];
+var b = ['A', 'B', 'C'];
+
+var newList = function(a,b)
+{
+  var l = a.length+b.length;
+  var r = [];
+  var j=0,k=0;
+  for(i=0; i<l;i++)
+   {
+    if(i%2==0) 
+    {
+      r[i]=a[j++];
+    } 
+    else
+    {
+      r[i]=b[k++];
+    }
+  }
+  document.write(r);
+};
+</script>
+</body>
+</html>

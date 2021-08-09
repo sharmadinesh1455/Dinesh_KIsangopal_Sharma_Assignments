@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rotate Element</title>
+    </head>
+
+    <body>
+        <h2>Rotatinig Elements by k Element</h2>
+
+        <script>
+
+
+            var arr= [1, 2, 3, 4, 5, 6, 7 ];
+            var n = 7;
+            document.write("Entered Array Elements are:"+ arr);
+            document.write("<br><br>");
+
+            leftRotate(arr, 2, n);
+
+            document.write("Array After Roatated: ");
+            printArray(arr, n);
+
+            
+            function leftRotate(ar, d, n)
+            {
+                var i;
+                for (i = 0; i < d; i++)
+                {
+                    leftRotatebyOne(arr, n);
+                }
+            }
+
+            function leftRotatebyOne(arr , n)
+            {
+                var temp = arr[0], i;
+                for (i = 0; i < n - 1; i++)
+                {
+                   arr[i] = arr[i + 1];
+                 }
+                arr[n-1] = temp;
+            }
+
+            function printArray(arr, n)
+            {
+                var i;
+                for (i = 0; i < n; i++)
+                {
+                  document.write(arr[i] + " ");
+                }
+            }
+        </script>
+    </body>
+</html>

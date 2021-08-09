@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function bubbleSort(arr)
+{
+ for(var i = 0; i < arr.length; i++)
+{
+   for(var j = 0; j < ( arr.length -1 ); j++)
+  {
+     if(arr[j] > arr[j+1])
+     {
+       var temp = arr[j]
+       arr[j] = arr[j + 1]
+       arr[j+1] = temp
+     }
+   }
+ }
+ document.write("Sorted Array Using bubble Sort: "+ arr);
+}
+var arr = new Array(20);
+for(i=0;i<20;i++)
+{
+    arr[i]=parseInt( Math.random() * 20);
+}
+bubbleSort(arr);
+
+</script>
+<body>  
+
+</body>
+</html>

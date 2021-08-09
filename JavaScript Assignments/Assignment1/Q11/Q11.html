@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reverse Array</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+         
+    <script>
+        var arr= [10,20,30,40,50,60,70,80,90,100]
+        var n = arr.length;
+
+        document.write("Entered Array is: <br>");
+        document.write(arr);
+        document.write("<br>");
+        document.write("Reversed Array is: <br>");
+        reverse(arr, n);
+
+        function reverse(arr, n)
+        {
+            var i;
+            for(i = n-1; i >= 0; i--)
+            {
+                document.write(arr[i]+" ");
+            }
+            
+        }
+        
+    </script>
+    </body>
+</html>
