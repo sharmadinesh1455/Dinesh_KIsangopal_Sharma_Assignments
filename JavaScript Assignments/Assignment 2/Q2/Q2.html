@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 1</title>
+    </head>
+
+    <body>
+        
+        <script>
+
+        //compose function that takes two argument and again both function having the exactly one argument as val
+        const compose =(fun1, fun2)=> val => {
+            return fun1(fun2(val));
+        };
+
+        
+        const square = val => val*val;
+        const double = val => val*2;
+
+        //composing the functions 
+        var value1 = compose(square, double);
+        var value2 = compose(double, square);
+
+        //calling the compose function when called on value 
+        document.write(value1(5));
+        document.write("<br>");
+        document.write(value1(10));
+        document.write("<br>");
+        document.write(value2(5));
+        document.write("<br>");
+        document.write(value2(10));
+        
+        
+        </script>
+    </body>
+</html>

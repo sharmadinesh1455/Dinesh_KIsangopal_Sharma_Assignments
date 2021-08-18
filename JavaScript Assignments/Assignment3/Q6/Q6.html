@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Question 6</title>
+</head>
+<body>
+    
+    <script>
+        var string='({firstname:"Dinesh",middlename:"Kisangopal" ,lastname:"Sharma"})';
+        var  obj=eval(string);   //converted a string into object by using the eval method
+    
+        document.write("firstname: ",obj.firstname + "<br>")
+        document.write("middlename: ",obj.middlename + "<br>");
+        document.write("lastname: ",obj.lastname + "<br>");
+
+        
+        obj.firstname="Prathmesh";
+        console.log(obj);
+    </script>
+</body>
+</html>

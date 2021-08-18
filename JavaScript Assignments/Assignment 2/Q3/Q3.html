@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 3</title>
+    </head>
+
+    <script>
+        var arr  = [1,2,3,4,5,6];
+
+        function isEven(num)
+        {
+            if(num%2===0)
+            {
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        function find(arr, isEven)
+        {
+            let l= arr.length;
+            let temp = 0;
+            let final_ans;
+
+            var i;
+            for(i=0; i<l; i++)
+            {
+                temp = isEven(arr[i])
+
+                if(temp===true)
+                {
+                    final_ans= arr[i];
+                    break;
+                }
+            }
+            return final_ans;
+        }
+
+        document.write(find(arr, isEven));
+    </script>
+</html>

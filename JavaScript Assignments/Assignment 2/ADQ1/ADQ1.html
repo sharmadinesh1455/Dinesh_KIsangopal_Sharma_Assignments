@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q1 OF Advance Higher Order Functioning</title>
+    </head>
+
+    <body>
+        
+        <script>
+
+            var arr= [1,2,3,4,5]
+
+            function isEven(val)
+            {
+                if(val%2==0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            function find(arr, fun)
+            {
+                var res = arr.shift();
+
+                if(fun(res))
+                {
+                    console.log(res);
+                }
+                else
+                {
+                    find(arr, fun);
+                }
+            }
+
+            find(arr, isEven);
+            
+        </script>
+    </body>
+</html>

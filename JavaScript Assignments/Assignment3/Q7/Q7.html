@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Question 7</title>
+</head>
+<body>
+    
+    <script>
+     const obj = JSON.parse('{"name":"Dinesh", "MiddeName":"Kisangopal", "Lastname":"Sharma"}');
+
+        console.log("converted a string into object by using json");
+
+        console.log("firstname:",obj.firstname);    
+        console.log("middlename",obj.middlename);
+        console.log("lastname:",obj.lastname);
+        //printing address which is not yet property of obj;
+        console.log(obj.address);
+        // assigning value to address;
+        obj.address="kolhapur";
+        console.log(obj.address);
+        // string is not modified
+        console.log(str);
+        //odject is modified:
+        console.log(obj);
+        obj.firstname="sachin";
+        console.log(obj);

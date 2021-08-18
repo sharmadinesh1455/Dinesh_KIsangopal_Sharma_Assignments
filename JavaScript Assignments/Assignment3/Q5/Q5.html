@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Question 5</title>
+</head>
+<body>
+    <script>
+        //Creating the object without making a class and modifing the properties;
+
+        var person =new Object();
+        person.firstname="Dinesh";
+        person.lastname="Sharma";
+
+        //Person's Properties Before modify
+        document.write("First name of person class is: ",person.firstname);
+        document.write("<br>");
+       document.write("First name of person class is: ",person.lastname);
+        document.write("<br>");
+
+        document.write("*************************<br>");
+
+
+        //Modifying the Properties of person...
+        person.firstname="Modified_Dinesh";
+        person.lastname="Modified_Sharma";
+
+        //Person's Properties After modify
+        document.write("First name of person class is: ",person.firstname);
+        document.write("<br>");
+        document.write("First name of person class is: ",person.lastname);
+        document.write("<br>");
+
+       
+        document.write("Middle name is:",person.middleName);  //reading the property of  middle name:
+
+        document.write("<br>");
+        person.middleName="Kisangopal";  //assignig the value to middle name:
+        document.write("After assigning Middle name is: ",person.middleName);
+
+    </script>
+</body>
+</html>

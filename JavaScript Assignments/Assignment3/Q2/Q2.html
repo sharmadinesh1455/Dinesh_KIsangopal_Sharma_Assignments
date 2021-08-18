@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 2</title>
+    </head>
+
+    <body>
+        
+        <script>
+            class Rectangle
+            {
+                constructor(height, width)
+                {
+                    this.height= height;
+                    this.width = width;
+                }
+            }
+            var rect= new Rectangle(10, 20);
+
+            document.write("Height of the rectangle is: "+ rect.height);
+            document.write("<br>");
+            document.write("Width of the rectangle is: "+ rect.width);
+            document.write("<br>");
+
+            Rectangle.prototype.getArea = function()
+            {
+                return this.height*this.width; 
+            }
+
+            document.write("Area fo Rectangle is: "+ rect.getArea());
+        </script>
+    </body>
+</html>

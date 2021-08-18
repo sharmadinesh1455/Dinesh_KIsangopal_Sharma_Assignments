@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 1</title>
+    </head>
+
+    <body>
+        
+        <script>
+
+            function main(fun1, fun2, val)
+            {
+                return fun1(fun2(val));
+            }
+
+            function square(val)
+            {
+                return val*val;
+            }
+
+            function double(val)
+            {
+                return val*2;
+            }
+
+            var result = main(square , double, 5);
+            document.write("Result: ", result);
+        </script>
+    </body>
+</html>

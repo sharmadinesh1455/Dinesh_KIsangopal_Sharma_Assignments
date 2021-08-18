@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 4</title>
+    </head>
+
+    <body>
+        <script>
+
+            var arr= [1,2,3,4,5];
+
+            function map(arr, square)
+            {
+                var output=[];
+                for( let i=0; i<arr.length; i++)
+                {
+                    output.push(square(arr[i]));
+                }
+                return output;
+            }
+
+            function square(num)
+            {
+                return num*num;
+            }
+
+            var final_output = map(arr, square);
+            document.write(final_output);
+
+
+        </script>
+    </body>
+</html>
